@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables (IMPORTANT - keeps your private keys safe!)
+.env
+.env.local
+.env.production
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# Next.js (frontend)
+.next/
+out/
+build/
+dist/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+coverage/
+coverage.json
+
+# Deployment
+deployments/localhost/
+
+# Misc
+*.tgz
+.cache
+temp/
+tmp/
