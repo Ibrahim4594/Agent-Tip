@@ -1,0 +1,31 @@
+Base Sepolia Network Configuration
+=================================
+
+Copy these values into MetaMask:
+
+Network Name: Base Sepolia
+
+RPC URL: https://sepolia.base.org
+
+Chain ID: 84532
+
+Currency Symbol: ETH
+
+Block Explorer URL: https://sepolia.basescan.org
+
+
+HOW TO ADD:
+1. Open MetaMask
+2. Click network dropdown (top left)
+3. Click "Add network" or "Add a custom network"
+4. Paste values above
+5. Click "Save"
+6. Switch to "Base Sepolia" network
+
+THEN GET TEST ETH:
+1. Copy your wallet address from MetaMask
+2. Visit: https://www.coinbase.com/faucets/base-sepolia-faucet
+3. Paste your address
+4. Click "Get test ETH"
+5. Wait 1-2 minutes
+6. Check MetaMask balance
