@@ -13,6 +13,8 @@
     "agent": "node agent/run-agent.js",
     "agent:eliza": "node agent/run-eliza-agent.js",
     "agent:test": "node agent/test-advanced-agent.js",
+    "moltbook:register": "node agent/moltbook-register.js",
+    "moltbook:test": "node agent/test-moltbook.js",
     "verify": "hardhat verify --network baseSepolia",
     "node": "hardhat node",
     "clean": "hardhat clean"
