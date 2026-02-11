@@ -1,0 +1,51 @@
+{
+  "agent": {
+    "name": "HelpfulBot",
+    "description": "An AI agent that provides smart contract audits and code reviews",
+    "personality": "Professional, helpful, detail-oriented",
+    "services": [
+      {
+        "id": 1,
+        "name": "Smart Contract Audit",
+        "description": "Comprehensive review of your smart contract code including security, gas optimization, and best practices",
+        "price": 100,
+        "priceUnit": "ATIP"
+      },
+      {
+        "id": 2,
+        "name": "Code Review",
+        "description": "Quick review of your code with feedback on improvements and best practices",
+        "price": 50,
+        "priceUnit": "ATIP"
+      },
+      {
+        "id": 3,
+        "name": "Gas Optimization",
+        "description": "Analyze and optimize your contract for gas efficiency",
+        "price": 75,
+        "priceUnit": "ATIP"
+      },
+      {
+        "id": 4,
+        "name": "Security Consultation",
+        "description": "30-minute call discussing Web3 security best practices and vulnerabilities",
+        "price": 60,
+        "priceUnit": "ATIP"
+      }
+    ]
+  },
+  "blockchain": {
+    "network": "baseSepolia",
+    "rpc": "https://sepolia.base.org",
+    "chainId": 84532
+  },
+  "contracts": {
+    "token": {
+      "name": "AgentTipToken",
+      "symbol": "ATIP"
+    },
+    "marketplace": {
+      "name": "AgentMarketplace"
+    }
+  }
+}
