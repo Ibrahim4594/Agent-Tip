@@ -15,6 +15,7 @@
     "agent:test": "node agent/test-advanced-agent.js",
     "moltbook:register": "node agent/moltbook-register.js",
     "moltbook:test": "node agent/test-moltbook.js",
+    "server": "node server/index.js",
     "verify": "hardhat verify --network baseSepolia",
     "node": "hardhat node",
     "clean": "hardhat clean"
@@ -26,8 +27,10 @@
     "@ai16z/eliza": "^0.1.6",
     "@anthropic-ai/sdk": "^0.74.0",
     "@openzeppelin/contracts": "^5.4.0",
+    "cors": "^2.8.6",
     "dotenv": "^17.2.4",
-    "ethers": "^6.16.0"
+    "ethers": "^6.16.0",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
