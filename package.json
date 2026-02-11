@@ -8,6 +8,10 @@
     "compile": "hardhat compile",
     "deploy:local": "hardhat run scripts/deploy.js",
     "deploy:sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:day5": "hardhat run scripts/deploy-day5.js --network baseSepolia",
+    "test:deployed": "node scripts/test-deployed.js",
+    "agent": "node agent/run-agent.js",
+    "agent:test": "node agent/test-advanced-agent.js",
     "verify": "hardhat verify --network baseSepolia",
     "node": "hardhat node",
     "clean": "hardhat clean"
