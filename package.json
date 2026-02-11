@@ -11,6 +11,7 @@
     "deploy:day5": "hardhat run scripts/deploy-day5.js --network baseSepolia",
     "test:deployed": "node scripts/test-deployed.js",
     "agent": "node agent/run-agent.js",
+    "agent:eliza": "node agent/run-eliza-agent.js",
     "agent:test": "node agent/test-advanced-agent.js",
     "verify": "hardhat verify --network baseSepolia",
     "node": "hardhat node",
@@ -20,6 +21,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ai16z/eliza": "^0.1.6",
+    "@anthropic-ai/sdk": "^0.74.0",
     "@openzeppelin/contracts": "^5.4.0",
     "dotenv": "^17.2.4",
     "ethers": "^6.16.0"
