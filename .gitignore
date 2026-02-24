@@ -46,3 +46,15 @@ deployments/localhost/
 .cache
 temp/
 tmp/
+
+# Ollama
+*.gguf
+*.bin
+
+# OpenClaw sessions
+.openclaw/sessions/
+
+# Video recordings
+*.mp4
+*.mov
+*.avi
