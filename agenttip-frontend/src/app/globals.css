@@ -58,11 +58,17 @@ body::after {
   z-index: 9999;
 }
 
+/* ──────────────────── PANELS ──────────────────── */
 .panel {
-  background: var(--panel-bg);
-  border: 1px solid var(--panel-border-color);
-  backdrop-filter: blur(20px);
+  background: linear-gradient(135deg, rgba(10, 14, 30, 0.95), rgba(5, 8, 20, 0.98));
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  backdrop-filter: blur(24px) saturate(180%);
   position: relative;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(0, 240, 255, 0.05) inset,
+    0 20px 60px rgba(0, 240, 255, 0.03);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .panel::before {
@@ -70,14 +76,26 @@ body::after {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(0,240,255,0.05) 0%, transparent 50%, rgba(255,0,170,0.03) 100%);
+  background: linear-gradient(135deg, rgba(0,240,255,0.08) 0%, transparent 40%, rgba(255,0,170,0.05) 100%);
   pointer-events: none;
+  opacity: 0.6;
 }
 
+.panel:hover {
+  border-color: rgba(0, 240, 255, 0.25);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(0, 240, 255, 0.1) inset,
+    0 24px 80px rgba(0, 240, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+/* ──────────────────── TEXT GLOWS ──────────────────── */
 .text-glow-cyan { text-shadow: 0 0 10px rgba(0,240,255,0.5), 0 0 40px rgba(0,240,255,0.2); }
 .text-glow-magenta { text-shadow: 0 0 10px rgba(255,0,170,0.5), 0 0 40px rgba(255,0,170,0.2); }
 .text-glow-green { text-shadow: 0 0 10px rgba(0,255,136,0.5), 0 0 40px rgba(0,255,136,0.2); }
 
+/* ──────────────────── KEYFRAMES ──────────────────── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
@@ -109,6 +127,38 @@ body::after {
   100% { background-position: 0% 50%; }
 }
 
+@keyframes chart-bar-grow {
+  from { width: 0%; }
+  to { width: var(--bar-width, 100%); }
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes typing-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+@keyframes flow-shimmer {
+  0% { background-position: -100% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes livePulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,255,136,0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(0,255,136,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,255,136,0); }
+}
+
+/* ──────────────────── ANIMATION UTILITIES ──────────────────── */
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
@@ -128,6 +178,16 @@ body::after {
   animation: float 4s ease-in-out infinite;
 }
 
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+}
+
+.animate-live-pulse {
+  animation: livePulse 1s ease-out;
+}
+
+/* ──────────────────── REPUTATION BAR ──────────────────── */
 .reputation-bar {
   position: relative;
   height: 6px;
@@ -144,20 +204,41 @@ body::after {
   transition: width 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+/* ──────────────────── STAT VALUE ──────────────────── */
 .stat-value {
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  position: relative;
+  animation: stat-glow 2s ease-in-out infinite alternate;
 }
 
+@keyframes stat-glow {
+  0% { filter: brightness(1) drop-shadow(0 0 8px currentColor); }
+  100% { filter: brightness(1.1) drop-shadow(0 0 16px currentColor); }
+}
+
+/* ──────────────────── SERVICE CARD ──────────────────── */
 .service-card {
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .service-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(0, 240, 255, 0.3);
-  box-shadow: 0 0 20px rgba(0,240,255,0.1), 0 20px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(0,240,255,0.1);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 45px rgba(0,240,255,0.22), 0 30px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(0,240,255,0.2);
 }
 
+.service-card::before {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* ──────────────────── STATUS ONLINE ──────────────────── */
 .status-online {
   width: 8px;
   height: 8px;
@@ -167,10 +248,11 @@ body::after {
   animation: pulse-glow 1.5s ease-in-out infinite;
 }
 
+/* ──────────────────── CONNECT BUTTON ──────────────────── */
 .btn-connect {
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .btn-connect::before {
@@ -182,30 +264,45 @@ body::after {
   animation: border-flow 3s linear infinite;
   border-radius: inherit;
   z-index: -1;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
 }
 
 .btn-connect::after {
   content: '';
   position: absolute;
-  inset: 1px;
-  background: rgba(5, 6, 15, 0.9);
+  inset: 2px;
+  background: rgba(5, 6, 15, 0.95);
   border-radius: inherit;
   z-index: -1;
 }
 
 .btn-connect:hover {
-  box-shadow: 0 0 30px rgba(0,240,255,0.3), 0 0 60px rgba(255,0,170,0.15);
-  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0,240,255,0.4), 0 0 80px rgba(255,0,170,0.2), 0 10px 30px rgba(0,0,0,0.3);
+  transform: scale(1.05) translateY(-2px);
 }
 
+.btn-connect:hover::before {
+  opacity: 1;
+}
+
+.btn-connect:active {
+  transform: scale(0.98);
+}
+
+/* ──────────────────── TRANSACTION ROW ──────────────────── */
 .tx-row {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  will-change: transform, opacity;
 }
 
 .tx-row:hover {
-  background: rgba(0, 240, 255, 0.04);
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.06), rgba(0, 240, 255, 0.02));
+  transform: translateX(4px);
 }
 
+/* ──────────────────── CORNER ACCENT ──────────────────── */
 .corner-accent { position: relative; }
 .corner-accent::before,
 .corner-accent::after {
@@ -227,6 +324,7 @@ body::after {
   border-right: 1px solid;
 }
 
+/* ──────────────────── ORBIT RING ──────────────────── */
 .orbit-ring {
   border: 1px solid rgba(0, 240, 255, 0.2);
   border-radius: 50%;
@@ -246,10 +344,249 @@ body::after {
   box-shadow: 0 0 8px var(--neon-cyan);
 }
 
+/* ──────────────────── TAG ──────────────────── */
 .tag {
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 2px 8px;
   border-radius: 2px;
+}
+
+/* ──────────────────── NAV LINK ──────────────────── */
+.nav-link {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link:hover {
+  color: #00f0ff !important;
+  background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(0,240,255,0.05)) !important;
+  border: 1px solid rgba(0,240,255,0.2) !important;
+  box-shadow: 0 0 20px rgba(0,240,255,0.15) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link:active {
+  transform: translateY(0);
+}
+
+/* ──────────────────── SKELETON LOADER ──────────────────── */
+.skeleton-line {
+  background: linear-gradient(90deg, rgba(0,240,255,0.08) 25%, rgba(0,240,255,0.15) 50%, rgba(0,240,255,0.08) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+/* ──────────────────── CHART BAR ──────────────────── */
+.chart-bar-enter {
+  animation: chart-bar-grow 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  width: 0%;
+}
+
+/* ──────────────────── CHAT ──────────────────── */
+.chat-container {
+  box-shadow: 0 0 50px rgba(0,240,255,0.06), 0 25px 70px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,240,255,0.1);
+}
+
+.chat-header {
+  background: linear-gradient(135deg, rgba(0,240,255,0.03), rgba(255,0,170,0.03));
+  backdrop-filter: blur(10px);
+}
+
+.chat-messages {
+  background: rgba(2,3,8,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.2);
+  border-radius: 2px;
+}
+
+.chat-bubble {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.chat-input {
+  transition: all 0.2s ease;
+}
+
+.chat-input:focus {
+  border-color: rgba(0, 240, 255, 0.4) !important;
+  box-shadow: 0 0 20px rgba(0,240,255,0.12), 0 0 40px rgba(0,240,255,0.04);
+  background: rgba(0,240,255,0.04) !important;
+}
+
+.chat-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-send-btn:not(:disabled):hover {
+  background: linear-gradient(135deg, rgba(0,240,255,0.25), rgba(0,240,255,0.15)) !important;
+  box-shadow: 0 0 25px rgba(0,240,255,0.25), 0 0 50px rgba(0,240,255,0.1);
+  transform: scale(1.08);
+  border-color: rgba(0,240,255,0.4) !important;
+}
+
+.chat-send-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+/* ──────────────────── QUICK CHIPS ──────────────────── */
+.quick-chip {
+  cursor: pointer;
+  animation: fadeInUp 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.quick-chip:nth-child(1) { animation-delay: 0.4s; }
+.quick-chip:nth-child(2) { animation-delay: 0.5s; }
+.quick-chip:nth-child(3) { animation-delay: 0.6s; }
+.quick-chip:nth-child(4) { animation-delay: 0.7s; }
+.quick-chip:nth-child(5) { animation-delay: 0.8s; }
+.quick-chip:nth-child(6) { animation-delay: 0.9s; }
+
+.quick-chip:hover {
+  background: rgba(0,240,255,0.12) !important;
+  border-color: rgba(0,240,255,0.3) !important;
+  color: #00f0ff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(0,240,255,0.1);
+}
+
+/* ──────────────────── TYPING INDICATOR ──────────────────── */
+.typing-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 240, 255, 0.6);
+  animation: typing-bounce 1.2s ease-in-out infinite;
+}
+
+/* ──────────────────── FLOW DIAGRAM ──────────────────── */
+.flow-step {
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+  transform: translateY(-4px);
+}
+
+.flow-step:hover .flow-icon {
+  box-shadow: 0 0 30px rgba(0,240,255,0.25) !important;
+  border-color: rgba(0,240,255,0.4) !important;
+}
+
+.flow-connector-line {
+  background: linear-gradient(90deg, transparent, rgba(0,240,255,0.4), transparent);
+  background-size: 200% 100%;
+  animation: flow-shimmer 2s ease-in-out infinite;
+}
+
+/* Vertical connector line for mobile */
+@media (max-width: 768px) {
+  .flow-connector-line {
+    background: linear-gradient(180deg, transparent, rgba(0,240,255,0.4), transparent);
+    background-size: 100% 200%;
+  }
+}
+
+/* ──────────────────── MOBILE RESPONSIVE ──────────────────── */
+@media (max-width: 640px) {
+  .tag {
+    font-size: 0.55rem;
+    padding: 1px 6px;
+  }
+}
+
+/* ──────────────────── WOW EFFECTS ──────────────────── */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes holographic-shine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.holographic-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 240, 255, 0.3),
+    rgba(255, 0, 170, 0.3),
+    transparent
+  );
+  background-size: 200% 100%;
+  border-radius: inherit;
+  animation: holographic-shine 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+}
+
+.holographic-card:hover {
+  transform: perspective(1000px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg)) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 240, 255, 0.2);
+}
+
+.blockchain-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.blockchain-link:hover {
+  background: rgba(0, 240, 255, 0.1);
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.blockchain-link::after {
+  content: '↗';
+  font-size: 10px;
+  opacity: 0.6;
 }
