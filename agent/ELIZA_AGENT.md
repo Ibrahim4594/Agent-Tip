@@ -101,7 +101,7 @@ User Input
     ↓
 Conversation History
     ↓
-Claude API (via Anthropic SDK)
+Groq API (llama-3.3-70b-versatile)
     ↓
 Agent Processing
     ↓
@@ -113,7 +113,7 @@ Response to User
 ### Technology Stack
 
 - **Framework**: Eliza (@ai16z/eliza)
-- **AI**: Claude (via @anthropic-ai/sdk)
+- **AI**: Groq (llama-3.3-70b-versatile)
 - **Blockchain**: Ethers.js
 - **Network**: Base Sepolia testnet
 - **Contracts**: AgentTipToken + AgentMarketplace
@@ -278,14 +278,13 @@ npm run agent:eliza
 
 ## 🆘 Troubleshooting
 
-### "Cannot find module @anthropic-ai/sdk"
+### "Cannot find module groq-sdk"
 ```bash
-npm install @anthropic-ai/sdk
+npm install groq-sdk
 ```
 
 ### "Agent not responding"
 - Check internet connection
-- Verify Claude API key (if using custom key)
 - Check agent initialization
 
 ### "Cannot connect to blockchain"

@@ -1,7 +1,7 @@
 # MetaMask Setup & Private Key Guide
 
 ## 🦊 MetaMask Setup (If Not Done Yet)
-
+4. Ask for help in the community
 ### Step 1: Install MetaMask
 1. Visit: https://metamask.io/download
 2. Click "Install MetaMask for Chrome" (or your browser)

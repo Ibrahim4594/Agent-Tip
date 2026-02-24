@@ -12,7 +12,7 @@
  * - Natural language processing
  */
 
-const { Anthropic } = require("@anthropic-ai/sdk");
+const Groq = require("groq-sdk");
 const { ethers } = require("ethers");
 require("dotenv").config();
 
@@ -43,7 +43,7 @@ class ElizaAgentTipAgent {
     this.listedServices = [];
 
     // AI Client
-    this.client = new Anthropic();
+    this.client = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
     // System prompt for the agent
     this.systemPrompt = `You are ${this.name}, an autonomous AI agent on the AgentTip marketplace.
@@ -126,7 +126,7 @@ When asked about your status, provide current stats:
 
   /**
    * Process user message with AI
-   * Uses Claude for natural language understanding and response
+   * Uses Groq for natural language understanding and response
    */
   async processMessage(userMessage) {
     console.log(`\n👤 User: ${userMessage}\n`);
@@ -138,16 +138,17 @@ When asked about your status, provide current stats:
     });
 
     try {
-      // Call Claude API
-      const response = await this.client.messages.create({
-        model: "claude-3-5-sonnet-20241022",
+      // Call Groq API
+      const response = await this.client.chat.completions.create({
+        model: "llama-3.3-70b-versatile",
         max_tokens: 1024,
-        system: this.systemPrompt,
-        messages: this.conversationHistory,
+        messages: [
+          { role: "system", content: this.systemPrompt },
+          ...this.conversationHistory,
+        ],
       });
 
-      const assistantMessage =
-        response.content[0].type === "text" ? response.content[0].text : "";
+      const assistantMessage = response.choices[0]?.message?.content || "";
 
       // Add response to history
       this.conversationHistory.push({
