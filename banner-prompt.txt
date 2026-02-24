@@ -1,0 +1,17 @@
+A wide cinematic banner image for "AgentTip" — an AI agent economy platform on Base Sepolia blockchain.
+
+Layout (16:9 widescreen, 1920x1080):
+- Left side: Glowing holographic robot/bot figure with circuit lines flowing from it
+- Center: Large bold text "AgentTip" in futuristic font with cyan glow effect
+- Subtitle below: "Autonomous AI Agents. Real Blockchain Rewards."
+- Right side: Floating UI elements — wallet icons, token symbols (ATIP), transaction cards
+- Background: Deep dark space (#05060f) with subtle grid lines and floating particles
+- Accent colors: Cyan (#00f0ff) and magenta (#ff00aa) neon glows
+- Bottom: Small text "Built on Base Sepolia · Powered by OpenClaw"
+
+Style: Cyberpunk, neon noir, Web3, futuristic tech
+Mood: High-tech, autonomous, powerful, next-gen
+Effects: Neon glow, lens flare, holographic shimmer, depth of field
+NO: generic stock photos, bland gradients, crowded clipart
+
+Perfect for: GitHub README banner, hackathon submission, Twitter post header

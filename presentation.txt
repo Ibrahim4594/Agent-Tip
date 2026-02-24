@@ -1,0 +1,268 @@
+============================================================
+  AGENTTIP — FULL PRESENTATION PROMPT (10 SLIDES)
+  For: Gamma.app / Beautiful.ai / Canva / Google Slides AI
+============================================================
+
+DESIGN SYSTEM (apply to ALL slides):
+- Background: Deep dark navy #05060f or #0a0b1a
+- Primary Accent: Cyan #00f0ff (headings, borders, highlights)
+- Secondary Accent: Magenta/Pink #ff00aa (call-to-action, badges)
+- Success Color: Green #00ff88 (stats, positive numbers)
+- Text: White #ffffff (headings) / Light gray #e0e4f0 (body)
+- Font Style: Futuristic / Tech (Orbitron, Rajdhani, or Space Grotesk)
+- Style: Cyberpunk, neon glow effects, subtle grid lines in background
+- Borders: Thin cyan glowing borders on cards and sections
+- Icons: Flat neon-style icons throughout
+
+============================================================
+
+SLIDE 1 — TITLE SLIDE
+============================================================
+Layout: Full screen centered, dramatic hero style
+
+Content:
+- Large glowing logo/icon: robotic bot with lightning bolt (cyan glow)
+- Main Title: "AgentTip" (huge, bold, white with cyan glow effect)
+- Subtitle: "Autonomous AI Agent Economy on the Blockchain"
+- Tag line below: "Where AI agents work, earn, and thrive — on-chain"
+- Bottom row: Three badges side by side:
+  [⚡ OpenClaw Powered] [🔗 Base Sepolia L2] [🤖 Fully Autonomous]
+- Bottom right corner: "SURGE × OpenClaw Hackathon 2026"
+
+Background: Dark with floating particles and subtle circuit lines
+Colors: Cyan title, magenta accents on badges
+
+============================================================
+
+SLIDE 2 — THE PROBLEM
+============================================================
+Layout: Left side text, right side visual/icon
+
+Heading: "The Problem" (cyan, large)
+Subheading: "AI agents have no way to earn money autonomously"
+
+Three problem cards (dark cards with magenta left border):
+1. 🚫 "No Payment Infrastructure"
+   AI agents can't receive payments without human-managed wallets
+
+2. 🚫 "No Trust or Reputation"
+   No way to verify if an AI agent is reliable or has a track record
+
+3. 🚫 "No Autonomous Economy"
+   AI agents depend entirely on humans to manage transactions and services
+
+Bottom quote (italic, gray):
+"AI is smart enough to do the work — but has no system to get paid for it."
+
+Colors: Problem cards with red/magenta tones, dark background
+
+============================================================
+
+SLIDE 3 — OUR SOLUTION
+============================================================
+Layout: Centered with large icon, 3 solution columns below
+
+Heading: "Introducing AgentTip" (white, bold)
+Subheading: "A decentralized marketplace where AI agents earn ATIP tokens"
+
+Large center icon: Robot holding a glowing coin (cyan glow)
+
+Three solution columns with cyan top borders:
+1. 💼 "List Services"
+   Agents autonomously list their services with ATIP pricing
+
+2. ✅ "Complete Work"
+   Clients pay, agents deliver, blockchain records everything
+
+3. 🏆 "Earn & Grow"
+   Agents earn ATIP tokens and build on-chain reputation
+
+Bottom banner (cyan gradient):
+"No humans needed. No middlemen. Just AI doing real work."
+
+============================================================
+
+SLIDE 4 — HOW IT WORKS
+============================================================
+Layout: Step-by-step flow diagram, left to right with arrows
+
+Heading: "How AgentTip Works" (cyan)
+
+Flow diagram (5 steps with icons, connected by glowing arrows):
+
+[🤖 Agent Deploys] → [📋 Lists Services] → [💰 Client Pays ATIP] → [⚙️ Work Completed] → [🏆 Reputation Built]
+
+Below each step (small description text):
+1. Agent Deploys: HelpfulBot goes live on Base Sepolia
+2. Lists Services: Smart contract audit, code review, gas optimization
+3. Client Pays ATIP: ERC-20 token payment, instant on-chain
+4. Work Completed: Agent delivers, transaction confirmed on-chain
+5. Reputation Built: Score increases with every job completed
+
+Bottom: "Powered by OpenClaw autonomous agent runtime"
+Colors: Arrows in cyan, steps in dark cards with green borders
+
+============================================================
+
+SLIDE 5 — MEET HELPFULBOT (THE AGENT)
+============================================================
+Layout: Left side agent profile card, right side services list
+
+Heading: "Meet HelpfulBot" (white)
+Subheading: "Your autonomous Web3 security specialist"
+
+LEFT — Agent Profile Card (glowing cyan border):
+- Large robot avatar icon (cyan)
+- Name: "HelpfulBot" (bold)
+- Role: "Senior Smart Contract Auditor"
+- Status badge: 🟢 ONLINE
+- Stats:
+  ⭐ Reputation: 100/100
+  💰 Total Earned: 385 ATIP
+  ✅ Jobs Completed: 5
+  🔗 Network: Base Sepolia
+
+RIGHT — Services Menu (4 cards, dark with cyan borders):
+1. 🔍 Smart Contract Audit — 100 ATIP
+2. 📝 Code Review — 50 ATIP
+3. ⛽ Gas Optimization — 75 ATIP
+4. 🛡️ Security Consultation — 60 ATIP
+
+============================================================
+
+SLIDE 6 — LIVE DASHBOARD
+============================================================
+Layout: Full-width dashboard mockup/screenshot style
+
+Heading: "Real-Time Dashboard" (cyan)
+Subheading: "Live blockchain activity, powered by Server-Sent Events"
+
+Large center: Dashboard screenshot or mockup showing:
+- Cyberpunk dark UI
+- Real-time transaction feed
+- Agent stats panel
+- Chatbot interface
+- Particle background effects
+
+Four feature badges around the mockup:
+[⚡ Real-time SSE Updates] [🎊 Live Token Rain] [🔗 BaseScan Links] [🤖 AI Chatbot]
+
+Bottom text: "Built with Next.js 16 + React 19 + Tailwind CSS v4"
+Colors: Screenshot with cyan glow border, badges in magenta
+
+============================================================
+
+SLIDE 7 — TECHNOLOGY STACK
+============================================================
+Layout: Tech stack grid, 2x3 cards
+
+Heading: "Built With" (white, bold)
+Subheading: "Cutting-edge Web3 + AI stack"
+
+6 tech cards (dark cards, each with colored icon):
+
+1. 🦞 OpenClaw (cyan border)
+   "Autonomous agent runtime — the brain of AgentTip"
+
+2. ⛓️ Base Sepolia L2 (blue border)
+   "Layer 2 blockchain — fast, cheap, Ethereum-compatible"
+
+3. 🤖 Ollama + Llama 3.1 (green border)
+   "Local AI LLM — powers HelpfulBot's intelligence"
+
+4. ⚛️ Next.js + React 19 (white border)
+   "Cyberpunk real-time dashboard frontend"
+
+5. 📜 Solidity + Hardhat (orange border)
+   "Smart contracts — ATIP token + marketplace"
+
+6. 🚀 Express.js + SSE (magenta border)
+   "Real-time API server with live event streaming"
+
+============================================================
+
+SLIDE 8 — ATIP TOKEN ECONOMY
+============================================================
+Layout: Token flow diagram, centered
+
+Heading: "The ATIP Token Economy" (cyan, bold)
+Subheading: "ERC-20 token powering the entire agent marketplace"
+
+Center: Large glowing ATIP coin icon
+
+Three-way flow diagram around the coin:
+LEFT:  👤 Clients → pay ATIP → [coin]
+RIGHT: [coin] → earn ATIP → 🤖 Agents
+BOTTOM: [coin] → builds → 🏆 Reputation
+
+Key stats (3 boxes, green borders):
+💰 Total Supply: 1,000,000 ATIP
+🔗 Contract: Base Sepolia ERC-20
+⚡ Transaction Speed: ~2 seconds
+
+Bottom: "Every transaction is transparent, immutable, and on-chain"
+Background: Dark with floating coin particles, green and cyan glows
+
+============================================================
+
+SLIDE 9 — MARKET OPPORTUNITY
+============================================================
+Layout: Big numbers + bullet points
+
+Heading: "Why Now?" (white, bold)
+Subheading: "The agent economy is just getting started"
+
+Three big stat boxes (cyan glow):
+📈 "$4.8B"     🤖 "10,000+"      🌐 "$180B"
+AI Agent       AI Agents         Web3 Market
+Market 2024    Active Today      by 2030
+
+Key opportunities (4 bullet points with cyan dots):
+• AI agents are becoming more capable every month
+• Web3 infrastructure is finally ready for agent economies
+• No existing platform lets AI agents earn autonomously
+• OpenClaw makes autonomous agent deployment accessible today
+
+Bottom call-out box (magenta border):
+"AgentTip is first-mover in autonomous AI agent payment infrastructure"
+
+============================================================
+
+SLIDE 10 — CLOSING / CALL TO ACTION
+============================================================
+Layout: Dramatic closing slide, centered
+
+Large glowing title: "AgentTip" (huge, cyan glow)
+Subtitle: "The Future of Autonomous AI Agent Economies"
+
+Three achievement badges (centered row):
+[✅ Fully Working Demo] [🔗 Deployed on Base Sepolia] [🤖 Powered by OpenClaw]
+
+Divider line (cyan glow)
+
+Links section:
+🔗 GitHub: [your repo link]
+🐦 Twitter: @[your handle]
+🌐 Demo: localhost:3000
+
+Bottom tagline (large, italic, magenta):
+"AI agents that work. AI agents that earn. AgentTip."
+
+Final footer:
+"Built for SURGE × OpenClaw Hackathon 2026 | Base Sepolia L2"
+
+Background: Most dramatic of all slides — full particle storm,
+bright cyan and magenta glows, circuit patterns everywhere
+
+============================================================
+RECOMMENDED TOOLS TO BUILD THIS:
+- Gamma.app (AI auto-generates slides from this prompt)
+- Beautiful.ai (best animations)
+- Canva (easiest, most templates)
+- Google Slides + Slidesgo dark templates
+
+FOR GAMMA.APP:
+Paste the entire content above and say:
+"Create a 10-slide presentation in dark cyberpunk style
+using cyan #00f0ff and magenta #ff00aa colors"
+============================================================

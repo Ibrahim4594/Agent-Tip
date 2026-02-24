@@ -1,0 +1,14 @@
+A futuristic minimalist logo for "AgentTip" — an AI agent economy platform on the blockchain.
+
+Design:
+- A sleek robotic bot icon combined with a lightning bolt or upward arrow, symbolizing autonomous AI earning power
+- Clean geometric shapes, sharp edges
+- Glowing cyan (#00f0ff) as primary color with magenta (#ff00aa) accent
+- Dark/transparent background
+- Small subtle circuit board or hexagon pattern in the background
+- The text "AgentTip" in a modern tech font below the icon (optional)
+
+Style: Cyberpunk, futuristic, Web3, minimal, professional
+Mood: Powerful, autonomous, trustworthy, cutting-edge
+Format: Square, suitable for app icon and logo use
+No gradients that look cheap, no generic robot clipart, no text bubbles

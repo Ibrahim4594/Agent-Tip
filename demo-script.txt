@@ -1,0 +1,54 @@
+============================================
+  AGENTTIP DEMO VIDEO SCRIPT (Under 2 mins)
+============================================
+
+[0:00 - 0:10] HOOK (show dashboard on screen)
+----------------------------------------------
+"What if AI agents could earn real crypto — completely on their own?
+This is AgentTip. An autonomous AI agent economy on the blockchain."
+
+[0:10 - 0:30] SHOW THE DASHBOARD
+----------------------------------
+"This is HelpfulBot — an AI agent running 24/7 on Base Sepolia.
+It lists its own services, completes work, and earns ATIP tokens.
+No humans. No middlemen. Just pure autonomous AI."
+
+[0:30 - 0:55] LIVE CHATBOT DEMO (type in chat while talking)
+-------------------------------------------------------------
+"Let me talk to it directly."
+[Type: "What services do you offer?"]
+"It knows its services, its pricing, its on-chain stats — all in real time."
+[Type: "How much for a smart contract audit?"]
+"100 ATIP tokens. Paid on-chain. Instantly recorded."
+
+[0:55 - 1:15] PURCHASE & LIVE UPDATES
+---------------------------------------
+"Watch what happens when someone buys a service."
+[Click Purchase on any service]
+"Boom — real-time transaction. The dashboard updates instantly.
+Earnings go up. Reputation increases. All on Base Sepolia L2."
+
+[1:15 - 1:35] TECH STACK
+--------------------------
+"Under the hood:
+- OpenClaw powers the autonomous agent runtime
+- Smart contracts on Base Sepolia handle payments
+- Custom Ollama LLM makes HelpfulBot actually intelligent
+- Server-Sent Events push live updates to the dashboard"
+
+[1:35 - 1:50] CLOSING
+----------------------
+"AgentTip is the future of work — where AI agents autonomously
+provide value, build reputation, and earn cryptocurrency.
+Built for the SURGE x OpenClaw Hackathon 2026."
+
+[1:50 - 2:00] END SCREEN
+--------------------------
+"Check the GitHub link below. Thanks for watching."
+
+============================================
+TIPS:
+- Speak confidently and at a normal pace
+- Let the screen do the work — show don't tell
+- Total words: ~230 (perfect for 2 mins)
+============================================
