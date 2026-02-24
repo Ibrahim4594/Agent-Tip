@@ -26,11 +26,13 @@
   "dependencies": {
     "@ai16z/eliza": "^0.1.6",
     "@anthropic-ai/sdk": "^0.74.0",
+    "@google/generative-ai": "^0.24.1",
     "@openzeppelin/contracts": "^5.4.0",
     "cors": "^2.8.6",
     "dotenv": "^17.2.4",
     "ethers": "^6.16.0",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "groq-sdk": "^0.37.0"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
